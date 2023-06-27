@@ -50,7 +50,7 @@
     
     @media  screen and (min-width:768px) {
         .texto__salida--texto--textarea{
-            background-image: url(/imagenes/muñeco_texto.png);
+            background-image: url(/imagenes/muneco_texto.png);
             width: 400px;
             height: 20rem;
         }
