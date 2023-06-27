@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea un mensaje secreto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/encriptador.css">
+    <link rel="stylesheet" href="css/entrada-texto.css">
+    <link rel="stylesheet" href="css/salida-texto.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1 class="cabecera__titulo">Crea un mensaje secreto</h1>
+        <div class="cabecera__texto">
+            <p class="cabecera__texto--bienvenida">Te damos la bienvenida al encriptador de texto. Aquí podras introducir un texto que se encriptará y solo podrá resuelto en este mismo sitio.</p>
+            <p class="cabecera__texto--bienvenida">!Diviertete!</p>
+        </div>
+    </header>
+    <main class="encriptador">
+        <section class="texto__entrada">
+            <textarea class="texto__entrada--areaTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="texto__entrada--sinAcentos">
+                <h6 class="texto__entrada--sinAcentos--texto">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="texto__entrada--botones">
+                <button class="botonEncriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="botonDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="texto__salida">
+            <div class="texto__salida--texto">
+                <textarea class="texto__salida--texto--textarea"cols="30" rows="10"></textarea>
+            </div>
+            <div class="texto__salida--boton">
+                <button class="texto__salida--botonCopiar" onclick="copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodapie">
+        <div class="rodapie__creditos">
+            <p class="rodapie__creditos--texto">Hecho por Cristina Mendoza | 2023</p>
+        </div>
+    </footer>
+<script src="Script.js"></script>
+</body>
+</html>

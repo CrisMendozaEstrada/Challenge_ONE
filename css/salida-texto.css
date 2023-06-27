@@ -1,0 +1,57 @@
+.texto__salida{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-around;
+   }
+   
+   .texto__salida--texto--textarea{
+       background: white;
+       background-size: contain;
+       background-repeat: no-repeat;
+       border: none;
+       text-align: center;
+       border-radius: 32px;
+       background-position: center;
+       box-shadow: 0px 24px 32px -8px
+           rgba(0, 0, 0, 0.08);
+   }
+   
+   .texto__salida--texto--textarea{
+       outline: none;
+   }
+   
+   .texto__salida--boton{
+        margin-top: 0.2rem;
+   }
+
+   .texto__salida--botonCopiar{
+       border: 1px solid #0a3871;
+       border-radius: 24px;
+       color: #0a3871;
+       height: 67px;
+       width: 336px;
+       background-position: center;
+   }
+   
+   .texto__salida--botonCopiar:hover{
+        cursor: pointer;
+        background: #d8dfe8;
+        transition: all .1s ease-in-out;
+    }
+
+    @media  screen and (min-width:0) {
+        .texto__salida--texto--textarea{
+            width: 14rem;
+            height: 7rem;
+        }
+    }
+    
+    @media  screen and (min-width:768px) {
+        .texto__salida--texto--textarea{
+            background-image: url(/muñeco_texto.png);
+            width: 400px;
+            height: 20rem;
+        }
+    } 

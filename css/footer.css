@@ -1,0 +1,10 @@
+.rodapie{
+    display: flex;
+    justify-content: center;
+
+}
+
+.rodapie__creditos--texto{
+    color: #495057;
+     font-size: 18px;
+}
